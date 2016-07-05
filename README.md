@@ -7,7 +7,7 @@ We designed the NPR Alternative plugin to have these contrasts with the official
 
 1. Works with PHP 5.6 [without throwing errors](https://github.com/nprds/nprapi-wordpress/pull/14)
 3. Uses true object-oriented programming style
-  - Including objects with declared properties _( 
+  - Including objects with declared properties _(Unlike this: 
   [!](https://github.com/nprds/nprapi-wordpress/blob/master/classes/NPRAPI.php#L11) 
   [!](https://github.com/nprds/nprapi-wordpress/blob/master/classes/NPRAPI.php#L283)
   [!](https://github.com/nprds/nprapi-wordpress/blob/master/classes/NPRAPI.php#L290)
