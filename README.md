@@ -26,8 +26,8 @@ The above benefits result in a plugin that is more robust and easier to debug me
 
 Want to see more? Just compare the code; I think even a non-programmer will appreciate the differnce in clarity:
 
-- [Offical](https://github.com/nprds/nprapi-wordpress) vs.
-- [NPR Alternative](https://github.com/newclarity/npr-alternative/#start-of-content)
+- [Official NPR Story API Plugin](https://github.com/nprds/nprapi-wordpress) vs.
+- [NPR Alternative for WordPress](https://github.com/newclarity/npr-alternative/#start-of-content)
 
 Note that we designed NPR Alternative **more for PHP programmers than for end-users**, which means this plugin is more 
 like a PHP library comprised of composable functionality than a single set of end-user features.
