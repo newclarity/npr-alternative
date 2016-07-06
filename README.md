@@ -1,50 +1,38 @@
-# NPR Alternative Plugin for WordPress
+# NPR Alternative 
 
-This plugin is an alternative to the WordPress plugin [NPR Story API](https://wordpress.org/plugins/npr-story-api/) offered by NPR Digital Services.
+NPR Alternative is a **PHP-based library** and an included **WordPress Plugin** developed to be an alternative to the [NPR Story API](https://wordpress.org/plugins/npr-story-api/) WordPress plugin offered by [NPR Digital Services](http://digitalservices.npr.org/).
 
 ##Benefits over Official Plugin?
 We designed the NPR Alternative plugin to have these contrasts with the official plugin:
 
-1. Works with PHP 5.6 [without throwing errors](https://github.com/nprds/nprapi-wordpress/pull/14)
-3. Uses true object-oriented programming style
-  - Including objects with declared properties _(Unlike this: 
-  [!](https://github.com/nprds/nprapi-wordpress/blob/master/classes/NPRAPI.php#L283)
-  [!](https://github.com/nprds/nprapi-wordpress/blob/master/classes/NPRAPI.php#L290)
-  [!](https://github.com/nprds/nprapi-wordpress/blob/master/classes/NPRAPI.php#L11) 
-  [!](https://github.com/nprds/nprapi-wordpress/blob/master/classes/NPRAPIWordpress.php#L12)
-  )_ 
-4. Leverages modern PHP programming best practices such as:
-  - PHP [**Namespaces**](https://mattstauffer.co/blog/a-brief-introduction-to-php-namespacing)
-  - **Class-based Architecture** 
-      - Named classes and declared properties for each XML element 
-      - But reslient to XML schema changes using PHP magic methods-based extra properties
-  - A **Class Autoloader** _(though not a PSR-4 autoloader, to keep deployment simple)_
-  - Support for [**Composer**](https://getcomposer.org/)
-  
-The above benefits result in a plugin that is more robust and easier to debug meaning **less frustration with broken feeds** and 
-**less time and money spent on diagnosing problems.**
+1. Designed for PHP programmers _(vs. WordPress end-users or site builders)_ 
+2. Leverages modern PHP programming best practices such as:
+  - Works with PHP 5.6
+  - Uses PHP [**Namespaces**](https://mattstauffer.co/blog/a-brief-introduction-to-php-namespacing) _(for most classes, but not all)_
+  - Provides an **Class Autoloader** _(though not a PSR-4 autoloader, to keep deployment simple)_
+  - Supports [**Composer**](https://getcomposer.org/) for PHP
+3. Uses True Object-oriented Programming Style
+  - **Class-based Architecture** with named classes and declared properties for each XML element 
+  - Reslient to XML schema changes using PHP magic methods-based extra properties
+4. More flexible, more robust, and easier to diagnose and debug coding errors (vs. changes in the NPR API than the official plugin _(at least in our experience.)_
 
-Want to see more? Just compare the code; I think even a non-programmer will appreciate the differnce in clarity:
+We think the above benefits result in a library that will be more robust and easier to debug meaning **less frustration with broken feeds** and **less time and money spent on diagnosing problems** than when using the official plugin.
 
-- [Official NPR Story API Plugin](https://github.com/nprds/nprapi-wordpress) vs.
-- [NPR Alternative for WordPress](https://github.com/newclarity/npr-alternative/#start-of-content)
+###Regarding End-User Features
+Even though we built this library primarily for PHP developers it should be easy and inexpensive to provide a **great end-user experience** on top of the robust core we have created.
 
-Note that we designed NPR Alternative **more for PHP programmers than for end-users**, which means this plugin is more 
-like a PHP library comprised of composable functionality than a single set of end-user features.
-
-However a **better end-user experience** will be much easier _(and cheaper)_ to implement on top of the robust core we have created.
-
-##Why Build an Alternative to the Official Plugin?
-We built this plugin because it was taking too much time diagnosing problems with the official plugin and 
-because at the time of choosing to develop this the team maintaining the official plugin [had not even 
-commented on our pull requests](https://github.com/nprds/nprapi-wordpress/pulls/mikeschinkel) 
-even though they fix still unfixed bugs in their code. 
+##Why Build an Alternative?
+Simply because the NPR Story API WordPress plugin did not meet our needs. Further we wanted a more robust solution so we would not have to spend as much time diagnosing unexplained issues with the content imported into WordPress.
 
 ##Current Status
-It is currently a work-in-progress regarding features and is being developed for the needs of our clients who are NPR affiliates.  
+This library is currently a work-in-progress regarding features and is being developed for the needs of our clients who are NPR affiliates.  
 
 ##Interested in More Features and/or Help Using It?
-If you are interested in using this plugin and would like help doing so, or would like us to add features, 
-please contact us via [info@newclarity.net](mailto:info@newclarity.net).
+If you are interested in using this library/plugin but would like us to add sme new features, or you would simply like our help in using it please contact us via [info@newclarity.net](mailto:info@newclarity.net).
+
+###Integration to Other PHP-based CMS or Framework?
+We developed this library/plugin to be distinct from WordPress by adding a _"driver"_ model and even included a WordPress driver. Thus it should not be terribly difficult to integrate with another PHP CMS or Framework &mdash; such as Drupal, Joomla or Laravel  &mdash; by adding additional drivers to the library.
+
+So if you are interested in using this library with a PHP-based CMS/Framework other than WordPress and would like help in doing so please contact us via [info@newclarity.net](mailto:info@newclarity.net).  
 
 

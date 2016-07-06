@@ -1,0 +1,14 @@
+{
+    "name": "newclarity/npr-alternative",
+    "description": "A Library for PHP and a WordPress Plugin for accessing NRP's Data Services API",
+    "type": "library",
+    "license": "GPLv3",
+    "authors": [
+        {
+            "name": "NewClarity Consulting LLC",
+            "email": "info@newclarity.net"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {}
+}
