@@ -67,7 +67,7 @@ You will probably also want to create a child class of `NprAlt` for your impleme
 
 Then to call the NPR API you can call the following somewhere in your code:
 	
-	$result = NprAlt_WordPress::process_api_queries();
+	$result = NprAlt::process_api_queries();
 	print_r( $result );
 	
 From there it is up to you. And that's it!
