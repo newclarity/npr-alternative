@@ -30,7 +30,7 @@ Clone this repository into your [`/mu-plugins/`](https://premium.wpmudev.org/man
 
     <?php 
     require __DIR__ . '/npr-alternative/npr-alt-wordpress.php';
-    NprAlt::register_settings( array(
+    NprAlt_WordPress::register_settings( array(
         'api_key' => '<Your NPR Digital Services issues API Key Goes Here>',
         'org_id'  => <Your Numeric OrgId goes here>,
     ));
