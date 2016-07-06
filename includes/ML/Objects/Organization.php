@@ -8,7 +8,7 @@ namespace NprAlt\ML\Objects {
 
         const PROPERTY_MAP = array(
             'orgId'   => 'org_id',
-            'orgAbbr' => 'ord_abbr',
+            'orgAbbr' => 'org_abbr',
         );
 
         /**
@@ -19,7 +19,7 @@ namespace NprAlt\ML\Objects {
         /**
          * @var string
          */
-        var $ord_abbr;
+        var $org_abbr;
 
         /**
          * @var string
