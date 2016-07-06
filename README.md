@@ -14,7 +14,7 @@ We designed the NPR Alternative plugin to have these contrasts with the official
 3. Uses True Object-oriented Programming Style
   - **Class-based Architecture** with named classes and declared properties for each XML element 
   - Reslient to XML schema changes using PHP magic methods-based extra properties
-4. More flexible, more robust, and easier to diagnose and debug coding errors (vs. changes in the NPR API than the official plugin _(at least in our experience.)_
+4. More flexible, more robust, and easier to diagnose and debug coding errors vs. bugs or changes in the NPR API XML schema than the official plugin _(at least in our experience.)_
 
 We think the above benefits result in a library that will be more robust and easier to debug meaning **less frustration with broken feeds** and **less time and money spent on diagnosing problems** than when using the official plugin.
 
